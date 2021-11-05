@@ -1,0 +1,80 @@
+div h3 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #EDEDED;
+}
+
+div p {
+  text-align: center;
+  margin-top: 100px;
+}
+
+div a {
+  color: #EDEDED;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6C4A4A;
+}
+
+.slider {
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+}
+
+.image {
+  display: flex;
+  width: 100%;
+}
+
+.image img {
+  height: 500 px;
+  width: 100%;
+  transition: all 0.15s ease;
+}
+
+.image input {
+  display: none;
+}
+
+.dotz {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.dotz label {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid #EDEDED 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+
+.dotz label:hover {background: #DDBEBE;}
+#aye1:checked ~ .m1 {
+  margin-left: 0;
+}
+#aye2:checked ~ .m2 {
+  margin-left: -100%;
+}
+#aye3:checked ~ .m3 {
+  margin-left: -200%;
+}
+#aye4:checked ~ .m4 {
+  margin-left: -300%;
+}
